@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Directorio de Empresas – Canarias</title>
-  <meta name="description" content="Directorio simple de empresas en Canarias. Busca y descubre negocios locales por nombre, NIF, ciudad o dominio web." />
+  <meta name="description" content="Ficha de empresa: DESPACHO JURÍDICO LOYALTY S.L.P. en Santa Cruz de Tenerife." />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏢</text></svg>">
 
   <style>
@@ -16,17 +16,10 @@
     html,body{ margin:0; padding:0; background:var(--bg); color:var(--ink); font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif }
     a{ color:var(--brand); text-decoration:none } a:hover{ text-decoration:underline }
     header{ padding:2.5rem 1rem 1.25rem; text-align:center; background:linear-gradient(180deg,#fff,rgba(255,255,255,0)); }
-    .container{ max-width:1000px; margin:0 auto; padding: 0 1rem 3rem }
+    .container{ max-width:800px; margin:0 auto; padding: 0 1rem 3rem }
     h1{ font-size: clamp(1.6rem, 2.5vw, 2.2rem); margin:.2rem 0 }
     p.lead{ color:var(--muted); margin:.25rem 0 1rem }
-    .search{ display:flex; gap:.6rem; justify-content:center; align-items:center; flex-wrap:wrap; margin: 1rem auto 2rem; }
-    .search input{
-      width: min(640px, 100%); padding: .9rem 1rem; border:1px solid var(--line);
-      border-radius: var(--radius); background:#fff; outline:none; font-size:1rem;
-      box-shadow: 0 6px 20px rgba(2, 6, 23, .04);
-    }
-    .badge{ display:inline-block; padding:.35rem .6rem; border:1px solid var(--line); border-radius:999px; color:var(--muted); background:#fff; font-size:.86rem }
-    .grid{ display:grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap:1rem; }
+    .grid{ display:grid; grid-template-columns:1fr; gap:1rem; }
     .card{
       background:var(--card); border:1px solid var(--line); border-radius: var(--radius);
       padding:1rem; transition: transform .2s ease, box-shadow .2s ease;
@@ -43,165 +36,51 @@
     .actions{ display:flex; gap:.5rem; margin-top:.8rem; flex-wrap:wrap }
     .btn{ display:inline-flex; align-items:center; gap:.45rem; padding:.6rem .85rem; border-radius:10px; border:1px solid var(--line); background:#fff; font-weight:600; }
     .btn.primary{ background: var(--brand); color:#fff; border-color: transparent }
-    .empty{ text-align:center; color:var(--muted); padding:2rem 1rem; display:none }
     footer{ text-align:center; color:var(--muted); padding:2rem 1rem; font-size:.92rem }
-    .sr-only{ position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); border:0 }
   </style>
 </head>
 <body>
   <header>
     <div class="container">
-      <span class="badge">Beta</span>
       <h1>Directorio de Empresas · Canarias</h1>
-      <p class="lead">Filtra por <strong>nombre</strong>, <strong>actividad</strong>, <strong>NIF/DNI</strong>, <strong>ciudad</strong>, <strong>dirección</strong> o <strong>dominio web</strong>.</p>
-      <div class="search" role="search">
-        <label for="q" class="sr-only">Buscar</label>
-        <input id="q" type="search" placeholder="Ej.: 'despacho', 'B01941616', 'Santa Cruz', 'efectonewton.com', 'loroparque.com'…" autocomplete="off" />
-      </div>
+      <p class="lead">Información de contacto y datos básicos.</p>
     </div>
   </header>
 
   <main class="container">
-    <section aria-labelledby="resultados">
-      <h2 id="resultados" class="sr-only">Resultados</h2>
-
-      <div id="grid" class="grid">
-        <!-- 1) FICHA PRINCIPAL (la tuya) -->
-        <article class="card"
-          data-name="DESPACHO JURIDICO LOYALTY SLP DESPACHO JURÍDICO LOYALTY S.L.P."
-          data-activity="Despacho jurídico, legal, abogados"
-          data-nif="B01941616"
-          data-city="Santa Cruz de Tenerife"
-          data-postal="38002"
-          data-address="Calle San Vicente Ferrer 5, 2º Izquierda, 38002, Santa Cruz de Tenerife"
-          data-website="alfredogomezalvarez.com">
-          <div class="title">
-            <div class="avatar" aria-hidden="true">⚖️</div>
-            <div>
-              <strong>DESPACHO JURÍDICO LOYALTY S.L.P.</strong>
-              <div class="meta">Despacho jurídico · Santa Cruz de Tenerife</div>
-            </div>
+    <div class="grid">
+      <!-- FICHA ÚNICA -->
+      <article class="card"
+        data-name="DESPACHO JURIDICO LOYALTY SLP DESPACHO JURÍDICO LOYALTY S.L.P."
+        data-activity="Despacho jurídico, legal, abogados"
+        data-nif="B01941616"
+        data-city="Santa Cruz de Tenerife"
+        data-postal="38002"
+        data-address="Calle San Vicente Ferrer 5, 2º Izquierda, 38002, Santa Cruz de Tenerife"
+        data-website="alfredogomezalvarez.com">
+        <div class="title">
+          <div class="avatar" aria-hidden="true">⚖️</div>
+          <div>
+            <strong>DESPACHO JURÍDICO LOYALTY S.L.P.</strong>
+            <div class="meta">Despacho jurídico · Santa Cruz de Tenerife</div>
           </div>
-          <div class="row"><div class="label">NIF</div><div class="value">B01941616</div></div>
-          <div class="row"><div class="label">Dirección</div><div class="value">Calle San Vicente Ferrer 5, 2º Izquierda<br>38002 · SANTA CRUZ DE TENERIFE</div></div>
-          <div class="row"><div class="label">Web</div><div class="value"><a href="https://alfredogomezalvarez.com/" target="_blank" rel="noopener">alfredogomezalvarez.com</a></div></div>
-          <div class="actions">
-            <a class="btn primary" href="https://alfredogomezalvarez.com/" target="_blank" rel="noopener">Visitar web</a>
-            <a class="btn" href="https://maps.google.com/?q=Calle%20San%20Vicente%20Ferrer%205%2C%2038002%20Santa%20Cruz%20de%20Tenerife" target="_blank" rel="noopener">Ver en mapa</a>
-            <button class="btn" onclick="compartir(this.closest('.card'))">Compartir</button>
-          </div>
-        </article>
-
-        <!-- 2) EFECTO NEWTON -->
-        <article class="card"
-          data-name="Efecto Newton"
-          data-activity="Agencia de marketing, SEO, SEM, diseño web"
-          data-nif="78569788D"
-          data-city="Santa Cruz de Tenerife"
-          data-postal=""
-          data-address="Santa Cruz de Tenerife"
-          data-website="efectonewton.com">
-          <div class="title">
-            <div class="avatar" aria-hidden="true">🚀</div>
-            <div>
-              <strong>Efecto Newton</strong>
-              <div class="meta">Agencia de marketing · Santa Cruz de Tenerife</div>
-            </div>
-          </div>
-          <div class="row"><div class="label">DNI/NIF</div><div class="value">78569788D</div></div>
-          <div class="row"><div class="label">Dirección</div><div class="value">Santa Cruz de Tenerife</div></div>
-          <div class="row"><div class="label">Web</div><div class="value"><a href="https://efectonewton.com/" target="_blank" rel="noopener">efectonewton.com</a></div></div>
-          <div class="actions">
-            <a class="btn primary" href="https://efectonewton.com/" target="_blank" rel="noopener">Visitar web</a>
-            <button class="btn" onclick="compartir(this.closest('.card'))">Compartir</button>
-          </div>
-        </article>
-
-        <!-- 3) LORO PARQUE (real) -->
-        <article class="card"
-          data-name="Loro Parque"
-          data-activity="Zoo, parque temático"
-          data-nif=""
-          data-city="Puerto de la Cruz"
-          data-postal=""
-          data-address="Tenerife, Islas Canarias"
-          data-website="loroparque.com">
-          <div class="title">
-            <div class="avatar" aria-hidden="true">🦜</div>
-            <div>
-              <strong>Loro Parque</strong>
-              <div class="meta">Zoo · Puerto de la Cruz</div>
-            </div>
-          </div>
-          <div class="row"><div class="label">NIF</div><div class="value">-</div></div>
-          <div class="row"><div class="label">Dirección</div><div class="value">Puerto de la Cruz · Tenerife</div></div>
-          <div class="row"><div class="label">Web</div><div class="value"><a href="https://www.loroparque.com/" target="_blank" rel="noopener">loroparque.com</a></div></div>
-          <div class="actions">
-            <a class="btn primary" href="https://www.loroparque.com/" target="_blank" rel="noopener">Visitar web</a>
-            <button class="btn" onclick="compartir(this.closest('.card'))">Compartir</button>
-          </div>
-        </article>
-
-        <!-- 4) SIAM PARK (real) -->
-        <article class="card"
-          data-name="Siam Park"
-          data-activity="Parque acuático"
-          data-nif=""
-          data-city="Costa Adeje"
-          data-postal=""
-          data-address="Adeje, Tenerife"
-          data-website="siampark.net">
-          <div class="title">
-            <div class="avatar" aria-hidden="true">🌊</div>
-            <div>
-              <strong>Siam Park</strong>
-              <div class="meta">Parque acuático · Costa Adeje</div>
-            </div>
-          </div>
-          <div class="row"><div class="label">NIF</div><div class="value">-</div></div>
-          <div class="row"><div class="label">Dirección</div><div class="value">Costa Adeje · Tenerife</div></div>
-          <div class="row"><div class="label">Web</div><div class="value"><a href="https://siampark.net/" target="_blank" rel="noopener">siampark.net</a></div></div>
-          <div class="actions">
-            <a class="btn primary" href="https://siampark.net/" target="_blank" rel="noopener">Visitar web</a>
-            <button class="btn" onclick="compartir(this.closest('.card'))">Compartir</button>
-          </div>
-        </article>
-
-        <!-- 5) AUDITORIO DE TENERIFE (real) -->
-        <article class="card"
-          data-name="Auditorio de Tenerife"
-          data-activity="Cultura, auditorio"
-          data-nif=""
-          data-city="Santa Cruz de Tenerife"
-          data-postal=""
-          data-address="Av. de la Constitución, Santa Cruz de Tenerife"
-          data-website="auditoriodetenerife.com">
-          <div class="title">
-            <div class="avatar" aria-hidden="true">🎼</div>
-            <div>
-              <strong>Auditorio de Tenerife</strong>
-              <div class="meta">Cultura · Santa Cruz de Tenerife</div>
-            </div>
-          </div>
-          <div class="row"><div class="label">NIF</div><div class="value">-</div></div>
-          <div class="row"><div class="label">Dirección</div><div class="value">Santa Cruz de Tenerife</div></div>
-          <div class="row"><div class="label">Web</div><div class="value"><a href="https://www.auditoriodetenerife.com/" target="_blank" rel="noopener">auditoriodetenerife.com</a></div></div>
-          <div class="actions">
-            <a class="btn primary" href="https://www.auditoriodetenerife.com/" target="_blank" rel="noopener">Visitar web</a>
-            <button class="btn" onclick="compartir(this.closest('.card'))">Compartir</button>
-          </div>
-        </article>
-      </div>
-
-      <div id="empty" class="empty">No hay resultados para tu búsqueda.</div>
-    </section>
+        </div>
+        <div class="row"><div class="label">NIF</div><div class="value">B01941616</div></div>
+        <div class="row"><div class="label">Dirección</div><div class="value">Calle San Vicente Ferrer 5, 2º Izquierda<br>38002 · SANTA CRUZ DE TENERIFE</div></div>
+        <div class="row"><div class="label">Web</div><div class="value"><a href="https://alfredogomezalvarez.com/" target="_blank" rel="noopener">alfredogomezalvarez.com</a></div></div>
+        <div class="actions">
+          <a class="btn primary" href="https://alfredogomezalvarez.com/" target="_blank" rel="noopener">Visitar web</a>
+          <a class="btn" href="https://maps.google.com/?q=Calle%20San%20Vicente%20Ferrer%205%2C%2038002%20Santa%20Cruz%20de%20Tenerife" target="_blank" rel="noopener">Ver en mapa</a>
+        </div>
+      </article>
+    </div>
   </main>
 
   <footer>
-    © 2025 Directorio de Empresas · Demo · HTML+CSS+JS puro
+    © 2025 Directorio de Empresas · HTML+CSS puro
   </footer>
 
-  <!-- Datos estructurados para la ficha principal -->
+  <!-- Datos estructurados para SEO -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -218,56 +97,6 @@
       "addressCountry": "ES"
     }
   }
-  </script>
-
-  <script>
-    // Normaliza textos para búsquedas (quita acentos, pasa a minúsculas)
-    function normaliza(t){ return (t||"").toString().toLowerCase().normalize("NFD").replace(/\p{Diacritic}/gu,""); }
-
-    const q = document.getElementById('q');
-    const grid = document.getElementById('grid');
-    const empty = document.getElementById('empty');
-
-    function filtrar(){
-      const term = normaliza(q.value.trim());
-      let visibles = 0;
-      for (const card of grid.querySelectorAll('.card')){
-        const hay = [
-          card.dataset.name,
-          card.dataset.activity,
-          card.dataset.nif,
-          card.dataset.city,
-          card.dataset.postal,
-          card.dataset.address,
-          card.dataset.website // 👈 búsqueda por dominio de la web
-        ].map(normaliza).some(v => v.includes(term));
-        card.style.display = (!term || hay) ? '' : 'none';
-        if (!term || hay) visibles++;
-      }
-      empty.style.display = visibles ? 'none' : 'block';
-    }
-    q.addEventListener('input', filtrar);
-
-    // Compartir (Web Share API si está disponible) o copia al portapapeles
-    async function compartir(card){
-      const nombre = card.querySelector('strong')?.textContent?.trim() || 'Empresa';
-      const nif = card.dataset.nif ? ` · ${card.dataset.nif}` : '';
-      const site = card.dataset.website ? ` · ${card.dataset.website}` : '';
-      const url = location.href;
-      const texto = `${nombre}${nif}${site} · ${url}`;
-
-      if (navigator.share){
-        try{ await navigator.share({ title: nombre, text: texto, url }); }
-        catch(e){ /* cancelado */ }
-      } else {
-        await navigator.clipboard.writeText(texto);
-        const btn = card.querySelector('.actions .btn:last-child');
-        const label = btn.textContent;
-        btn.textContent = '¡Copiado!';
-        setTimeout(()=> btn.textContent = label, 1200);
-      }
-    }
-    window.compartir = compartir;
   </script>
 </body>
 </html>
